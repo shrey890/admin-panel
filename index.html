@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- ? bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- ? img hover -->
+    <link rel="stylesheet" href="imagehover.css-master\imagehover.css-master\css\imagehover.min.css">
+    <!-- <link rel="stylesheet" href="imghover.css"> -->
+    <script src="https://kit.fontawesome.com/2d2d5dfc03.js" crossorigin="anonymous"></script>
+    <!--? link:css  -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <title>Admin Panel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap');
+
+        :root {
+            --main-color: #dd2f6e;
+            --color-dark: #1d2231;
+            --text-grey: #8390a2;
+        }
+
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            list-style-type: none;
+            text-decoration: none;
+            /* font-family: monospace; */
+            /* font-family: cursive; */
+            text-transform: capitalize;
+        }
+
+        .ff {
+            font-family: cursive;
+        }
+
+        body {
+            font-family: cursive;
+        }
+
+        ul li {
+
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .sidebar {
+            width: 345px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background: var(--main-color);
+            z-index: 100;
+            transition: width 300ms;
+        }
+
+        .sidebar-brand {
+            height: 90px;
+            padding: 1rem 0rem 1rem 2rem;
+            color: #fff;
+        }
+
+        .sidebar-brand span {
+            display: inline-block;
+            padding-right: 1rem;
+        }
+
+        .sidebar-menu {
+            margin-top: 1rem;
+        }
+
+        .sidebar-menu li {
+            width: 100%;
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .sidebar-menu a {
+            padding-left: 1rem;
+            display: block;
+            color: #fff;
+            font-size: 1.1rem;
+            text-decoration: none;
+
+
+        }
+
+        .sidebar-menu a.active {
+            background: #fff;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            color: var(--main-color);
+            border-radius: 30px 0px 0px 130px;
+            /* border: 0.1rem solid red;
+            width: 70%; */
+        }
+
+        .sidebar-menu a span:first-child {
+            font-size: 1.5rem;
+            padding-right: 1rem;
+        }
+
+        #nav-toggle:checked+.sidebar {
+            width: 70px;
+        }
+
+        #nav-toggle:checked+.sidebar .sidebar-brand,
+        #nav-toggle:checked+.sidebar li {
+            padding-left: 1rem;
+            text-align: center;
+        }
+
+        #nav-toggle:checked+.sidebar li a {
+            padding-left: 0rem;
+        }
+
+        #nav-toggle:checked+.sidebar .sidebar-brand h2 span:last-child,
+        #nav-toggle:checked+.sidebar li a span:last-child {
+            display: none;
+        }
+
+        #nav-toggle:checked~.main-content {
+            margin-left: 70px;
+        }
+
+        #nav-toggle:checked~.main-content header {
+            width: calc(100%-70px);
+            left: 70px;
+        }
+
+        .main-content {
+            transition: margin-left 300ms;
+            margin-left: 345px;
+        }
+
+        .header {
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            left: 345px;
+            width: calc(100%-345px);
+            top: 0;
+            transition: left 300ms;
+            z-index: 100;
+        }
+
+        header h2 {
+            color: #222
+        }
+
+        header label span {
+            font-size: 1.7rem;
+            padding-right: 1rem;
+        }
+
+        .search-wrapper {
+            /* border: 1px solid red; */
+            /* border-radius: 30px; */
+            /* width: 500px; */
+            /* height: 50px;/ */
+            /* display: flex; */
+            float: right;
+            /* margin-right: 40px; */
+            border: 2px solid black;
+            /* margin-left: 5rem; */
+            /* overflow-x: hidden; */
+        }
+
+        .search-wrapper span {
+            /* display: inline-block; */
+            padding: 0rem 1rem;
+            font-size: 1.6rem;
+        }
+
+        .search-wrapper input {
+            height: 100%;
+            padding: .5rem;
+            border: none;
+            outline: none;
+        }
+
+        .user-wrapper {
+            display: flex;
+            /* align-items: center */
+        }
+
+        .user-wrapper img {
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+
+        .user-wrapper small {
+            display: inline-block;
+            color: var(--text-grey);
+        }
+
+        main {
+            margin-top: 85px;
+            padding: 2rem 1.5rem;
+            background: #f1f5f9;
+            min-height: calc(100vh-90px);
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .card-single {
+            display: flex;
+            justify-content: space-between;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 2px;
+        }
+
+        .card-single div:last-child span {
+            font-size: 3rem;
+            color: var(--main-color);
+        }
+
+        .card-single div:first-child span {
+            color: var(--text-grey);
+        }
+
+        .card-single:last-child {
+            background: var(--main-color);
+        }
+
+        /*  */
+        .card-single:last-child h1,
+        .card-single:last-child div:first-child span,
+        .card-single:last-child div:last-child span {
+            color: #fff;
+        }
+
+        .recent-grid {
+            margin-top: 3.5rem;
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-columns: 65% auto;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 5px;
+        }
+
+        .card-header,
+        .card-body {
+            padding: 1rem;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .card-header button {
+            background: var(--main-color);
+            border-radius: 10px;
+            color: #fff;
+            font-size: .8rem;
+            padding: .5rem 1rem;
+            border: 1px solid var(--main-color);
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        thead tr {
+            border: 1px solid #f0f0f0;
+            border-bottom: 1px solid #f0f0f0f0;
+            padding: .5rem 0rem;
+        }
+
+        thead td {
+            font-weight: 700;
+        }
+
+        td {
+            padding: .5rem 1rem;
+            font-size: .9rem;
+            color: #222;
+            /* display: flex; */
+            align-items: center;
+        }
+
+        td .status {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+
+        tr td:last-child {
+            display: flex;
+            align-items: center;
+        }
+
+        .status.purple {
+            background: rebeccapurple;
+        }
+
+        .status.pink {
+            background: deeppink;
+        }
+
+        .status.orange {
+            background: orangered;
+        }
+
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .customer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .5rem .7rem;
+        }
+
+        .info {
+            display: flex;
+            align-items: center;
+        }
+
+        .info img {
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+
+        .info h4 {
+            font-size: .8rem;
+            font-weight: 600;
+            color: #222;
+        }
+
+        .info small {
+            font-weight: 600;
+            color: var(--text-grey);
+        }
+
+        .contact span {
+            font-size: 1.2rem;
+            display: inline-block;
+            margin-right: .5rem;
+            color: var(--main-color);
+        }
+
+        @media only screen and (max-width:1200px) {
+            .sidebar {
+                width: 70px;
+            }
+
+            .sidebar .sidebar-brand,
+            .sidebar li {
+                padding-left: 1rem;
+                text-align: center;
+            }
+
+            .sidebar li a {
+                padding-left: 0rem;
+            }
+
+            .sidebar .sidebar-brand h2 span:last-child,
+            .sidebar li a span:last-child {
+                display: none;
+            }
+
+            /* ! */
+            .sidebar:hover {
+                width: 345px;
+                z-index: 200;
+            }
+
+            .sidebar:hover .sidebar-brand,
+            .sidebar:hover li {
+                padding-left: 2rem;
+                text-align: left;
+            }
+
+            .sidebar:hover li a {
+                padding-left: 1rem;
+            }
+
+            .sidebar:hover .sidebar-brand h2 span:last-child,
+            .sidebar:hover li a span:last-child {
+                display: inline;
+            }
+
+            .main-content {
+                margin-left: 70px;
+            }
+
+            .main-content header {
+                width: calc(100%-70px);
+                left: 70px;
+            }
+        }
+
+        @media only screen and (max-width:960px) {
+            .cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .recent-grid {
+                grid-template-columns: 60% 40%;
+            }
+
+            .sidebar {
+                left: -100% !important;
+            }
+
+            .header h2 {
+                display: flex;
+                align-items: center;
+            }
+
+            header h2 label {
+                text-align: center;
+                background: var(--main-color);
+                padding-right: 0rem;
+                margin-right: 1rem;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                /* justify-content: center; */
+            }
+        }
+
+        @media only screen and (max-width:768px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .recent-grid {
+                grid-template-columns: 100%;
+            }
+
+            .search-wrapper {
+                display: none;
+            }
+
+        }
+
+        @media only screen and (max-width: 767.98px) {
+            .cards {
+                grid-template-columns: 100%;
+            }
+
+            .recent-grid {
+                grid-template-columns: 100%;
+            }
+
+            .search-wrapper {
+                display: none;
+            }
+
+            .sidebar {
+                left: -100% !important;
+            }
+
+            header h2 label {
+                display: inline-block;
+                text-align: center;
+                border-radius: 50%;
+                background: var(--main-color);
+                padding-right: 0rem;
+                margin-right: 1rem;
+                height: 40px;
+                width: 40px;
+                color: #fff;
+            }
+        }
+
+        .user-wrapper {
+            /* justify-content: center; */
+        }
+
+        .btn-top {
+            scroll-behavior: smooth;
+            position: fixed;
+            left: 95%;
+            top: 600px;
+            z-index: 2222;
+            color: red;
+            font-size: xx-large;
+            /* border-radius: 50%; */
+            background-color: black;
+            width: 50px;
+        }
+
+        .custom-loader {
+            width: 25px;
+            height: calc(25px*0.866);
+            position: absolute;
+            top: 1.1rem;
+
+            background: conic-gradient(from 120deg at 50% 64%, #0000, white 1deg 120deg, #0000 121deg);
+            transform-origin: 50% 50%;
+            animation: sp7-0 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+        }
+
+        .custom-loader:before,
+        .custom-loader:after {
+            content: '';
+            position: absolute;
+            /* top: 0.9rem; */
+            inset: 0;
+            background: inherit;
+            transform-origin: 50% 66%;
+            animation: sp7-1 1.5s infinite;
+        }
+
+        .custom-loader:after {
+            --s: -1;
+        }
+
+        @keyframes sp7-0 {
+
+            0%,
+            30% {
+                transform: rotate(0)
+            }
+
+            70% {
+                transform: rotate(120deg)
+            }
+
+            70.01%,
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes sp7-1 {
+            0% {
+                transform: rotate(calc(var(--s, 1)*120deg)) translate(0)
+            }
+
+            30%,
+            70% {
+                transform: rotate(calc(var(--s, 1)*120deg)) translate(calc(var(--s, 1)*-2.5px), 5px)
+            }
+
+            100% {
+                transform: rotate(calc(var(--s, 1)*120deg)) translate(0)
+            }
+        }
+
+        .top {
+            position: absolute;
+            left: 3.9rem;
+            top: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <!-- <h2><span class="lab la-accusoft"></span> -->
+            <div class="custom-loader"></div>
+            <h2 class="top">
+                <span>TOP</span>
+            </h2>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sim"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="sidebar-menu" id="sim">
+            <ul>
+                <li>
+                    <a href="" class="active">
+                        <span class="las la-igloo"></span>
+                        <span class="las la- ff">dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-users"></span>
+                        <span class="las la- ff">customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="x.html">
+                        <span class="las la-clipboard-list"></span>
+                        <span class="las la- ff ">registration</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-shopping-bag"></span>
+                        <span class="las la- ff">orders</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-receipt"></span>
+                        <span class="las la- ff">inventory</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-receipt"></span>
+                        <span class="las la- ff">project</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-user-circle"></span>
+                        <span class="las la- ff">accounts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="las la-clipboard-list"></span>
+                        <span class="las la- ff">task</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ! -->
+    <div class="main-content">
+        <header>
+            <h1>
+                <label for="nav-toggle">
+                    <span class="las la-bars "></span>
+                </label>
+                dashboard
+            </h1>
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="search here" class="">
+            </div>
+            <div class="user-wrapper ml-5">
+                <!-- <figure class="imghvr-hinge-down"> -->
+                <!-- <img src="https://dummyimage.com/40/000/fff" alt=""> -->
+                <div class="float mt-5">
+                    <h4>radiation city</h4>
+                    <small>super admin</small>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="cards">
+                <div class="card-single">
+                    <div>
+                        <h1>53</h1>
+                        <span>customers</span>
+                    </div>
+                    <div>
+                        <span class="las la-users"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>79</h1>
+                        <span>projects</span>
+                    </div>
+                    <div>
+                        <span class="las la-clipboard"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>179</h1>
+                        <span>orders</span>
+                    </div>
+                    <div>
+                        <span class="las la-shopping-bag"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>$6k</h1>
+                        <span>income</span>
+                    </div>
+                    <div>
+                        <span class="las la-wallet"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="recent-grid">
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>recent projects</h2>
+                            <button>see all <span class="las la-arrow-right"></span></button>
+                        </div>
+                        <!-- ! -->
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>projects title</td>
+                                            <td>department</td>
+                                            <td><span class="status">
+                                                </span> status</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>ui/ux design</td>
+                                            <td>ui team</td>
+                                            <td>
+                                                <span class="status purple"></span>
+                                                review
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>web development</td>
+                                            <td>frontend</td>
+                                            <td>
+                                                <span class="status pink"></span>
+                                                in progress
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                ushop app
+                                            </td>
+                                            <td>mobile team</td>
+                                            <td><span class="status orange"></span>pending</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- 
+                                !1Q1! -->
+                        </div>
+                    </div>
+                </div>
+                <div class="customers">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>
+                                new customer
+                            </h3>
+                            <button>see all
+                                <span class="las la-arrow-right"></span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="customer">
+                                <div class="info">
+                                    <img src="https://dummyimage.com/40/000/fff" alt="">
+                                    <div>
+                                        <h4>lewis s.</h4>
+                                        <small>CEO expert</small>
+                                    </div>
+                                </div>
+                                <div class="contact">
+                                    <span class="las la-user-circle"></span>
+                                    <span class="las la-comment"></span>
+                                    <span class="las la-phone"></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="customer">
+                                    <div class="info">
+                                        <img src="https://dummyimage.com/40/000/fff" alt="">
+                                        <div>
+                                            <h4>lewis s.</h4>
+                                            <small>CEO expert</small>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="las la-user-circle"></span>
+                                        <span class="las la-comment"></span>
+                                        <span class="las la-phone"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="customer">
+                                    <div class="info">
+                                        <img src="https://dummyimage.com/40/000/fff" alt="">
+                                        <div>
+                                            <h4>lewis s.</h4>
+                                            <small>CEO expert</small>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="las la-user-circle"></span>
+                                        <span class="las la-comment"></span>
+                                        <span class="las la-phone"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- top -->
+    <div class="btn-top">
+        <button class="btn top">
+            <a href="" class="top text-decoration-none btn-top">&#8593;</a>
+        </button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

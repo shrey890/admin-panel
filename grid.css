@@ -1,0 +1,25 @@
+*{
+    margin: 0%;padding: 0%;
+    text-align: center;
+    font-weight: 900;
+    font-family: monospace;
+}
+main{
+    width:90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows:150px 150px ;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-row-gap: 20px; */
+    /* grid-column-gap: 20px ; */
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.div1{ background: red; }
+.div2{ background: green; }
+.div3{ background: blue; }
+.div4{ background: grey; }
+.div5{ background: violet; }
+.div6{ background: purple; }

@@ -1,0 +1,1673 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.m {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.nav-1 {
+    width: 1440px;
+    /* height: 80px; */
+}
+
+.icon {
+    float: right;
+    padding-right: 5rem;
+    /* padding: 1rem;     */
+    column-gap: 20px;
+    display: flex;
+}
+
+.FL {
+    display:flex;
+    /* justify-content: space-around; */
+    list-style: none;
+    /* display:; */
+    /* position: absolute; */
+    /* left: 30px; */
+    /* margin-left: 1rem; */
+}
+
+ul li a {
+    text-decoration: none;
+    margin-left: 1.3rem;
+    color: black;
+    font-weight: 800;
+}
+
+input {
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    left: 3rem;
+    float: left;
+}
+
+.rex {
+    width: 100%;
+    /* border-radius: 1rem; */
+}
+
+.btn {
+    display: flex;
+    padding: 10px 30px;
+    gap: 10px;
+    position: absolute;
+    width: 131px;
+    height: 44px;
+    left: 1166px;
+    top: 50px;
+    background: #009BFF;
+    border-radius: 5px;
+    border: 0px solid transparent;
+}
+
+.btn-a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.welcome {
+    font-family: Segoe UI;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.2000000476837158px;
+    text-align: left;
+    color: #FFFFFF;
+    position: absolute;
+    width: 644px;
+    height: 48px;
+    left: 398px;
+    top: 350px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -1.2px;
+}
+
+.p {
+    position: absolute;
+    width: 788px;
+    height: 48px;
+    left: 326px;
+    top: 450px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -1.2px;
+    color: #FFFFFF;
+}
+
+.try {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 30px;
+    gap: 10px;
+    position: absolute;
+    width: 186px;
+    height: 54px;
+    left: 641px;
+    top: 550px;
+    border: 0px solid transparent !important;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.try-link {
+    width: 126px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 800;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.about {
+    position: absolute;
+    width: 216px;
+    height: 48px;
+    left: 123px;
+    top: 940px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    /* identical to box height, or 100% */
+    display: flex;
+    align-items: center;
+    /* 231F20 Secondary */
+    color: #231F20;
+}
+
+.content {
+    position: absolute;
+    width: 577.7px;
+    height: 195px;
+    left: 123px;
+    top: 1034px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    /* or 162% */
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    /* 525252 Black Second */
+    color: #525252;
+}
+
+.rec-5 {
+    position: absolute;
+    width: 582px;
+    height: 347px;
+    left: 800px;
+    top: 966px;
+    background: url(.jpg), #D9D9D9;
+    border-radius: 5px;
+}
+
+.our {
+    position: absolute;
+    width: 100%;
+    height: 698px;
+    left: 0px;
+    top: 1413px;
+    /* F5F5F5 Gray
+Gray
+*/
+    background: #F5F5F5;
+}
+
+.s {
+    position: absolute;
+    width: 288px;
+    height: 60px;
+    left: 629px;
+    top: 10px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #231F20;
+}
+
+.box-1 {
+    box-sizing: border-box;
+    width: 378px;
+    height: 326px;
+    /* White/900 */
+    background: #FFFFFF;
+    /* F5F5F5 Gray
+Gray
+*/
+    border: 1px solid #F5F5F5;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 223;
+    position: absolute;
+    top: 1580px;
+    left: 100px;
+}
+
+.insi {
+    position: absolute;
+    width: 347px;
+    height: 53px;
+    left: 110px;
+    text-align: center;
+    top: 20px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    /* or 187% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* 009BFF Primary */
+
+    color: #009BFF;
+
+
+}
+
+.vbg {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: 141px;
+    top: 72px;
+
+    /* E5F5FF Light Color
+
+Light Color
+*/
+    background: #E5F5FF;
+    border-radius: 16px;
+}
+
+.vec {
+    position: absolute;
+    left: 20.7px;
+    top: 20.9px;
+}
+
+.lyz {
+    position: absolute;
+    width: 337.95px;
+    height: 58px;
+    left: 20px;
+    top: 244px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* 525252 Black Second */
+
+    color: #525252;
+
+}
+
+.make {
+    position: absolute;
+    width: 347px;
+    height: 53px;
+    left: 80px;
+    top: 160px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    /* or 117% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20;
+
+}
+
+.box-2 {
+    box-sizing: border-box;
+    width: 378px;
+    height: 326px;
+    /* White/900 */
+    background: #FFFFFF;
+    /* F5F5F5 Gray
+Gray
+*/
+    border: 1px solid #F5F5F5;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 223;
+    position: absolute;
+    top: 1580px;
+    left: 580px;
+}
+
+.insi2 {
+    position: absolute;
+    width: 347px;
+    height: 53px;
+    left: 110px;
+    text-align: center;
+    top: 20px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    /* or 187% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* 009BFF Primary */
+
+    color: #009BFF;
+
+
+}
+
+.vbg2 {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: 141px;
+    top: 72px;
+
+    /* E5F5FF Light Color
+
+Light Color
+*/
+    background: #E5F5FF;
+    border-radius: 16px;
+}
+
+.vec2 {
+    position: absolute;
+    position: absolute;
+    left: 20.7px;
+    top: 20.9px;
+}
+
+.lyz2 {
+    position: absolute;
+    width: 337.95px;
+    height: 58px;
+    left: 20px;
+    top: 244px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* 525252 Black Second */
+
+    color: #525252;
+
+}
+
+.make2 {
+    position: absolute;
+    width: 347px;
+    height: 53px;
+    left: 80px;
+    top: 160px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    /* or 117% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20;
+
+}
+
+.box-3 {
+    box-sizing: border-box;
+    width: 378px;
+    height: 326px;
+    /* White/900 */
+    background: #FFFFFF;
+    /* F5F5F5 Gray
+Gray
+*/
+    border: 1px solid #F5F5F5;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 223;
+    position: absolute;
+    top: 1580px;
+    left: 1050px;
+}
+
+.insi3 {
+    position: absolute;
+    width: 347px;
+    height: 53px;
+    left: 110px;
+    text-align: center;
+    top: 20px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 28px;
+    /* or 187% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* 009BFF Primary */
+
+    color: #009BFF;
+
+
+}
+
+.vbg3 {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: 141px;
+    top: 72px;
+
+    /* E5F5FF Light Color
+
+Light Color
+*/
+    background: #E5F5FF;
+    border-radius: 16px;
+}
+
+.vec3 {
+    position: absolute;
+    position: absolute;
+    left: 20.7px;
+    top: 20.9px;
+}
+
+.lyz3 {
+    position: absolute;
+    width: 337.95px;
+    height: 58px;
+    left: 20px;
+    top: 244px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* 525252 Black Second */
+
+    color: #525252;
+
+}
+
+.make3 {
+    position: absolute;
+    width: 347px;
+    height: 53px;
+    left: 80px;
+    top: 160px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    /* or 117% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20;
+
+}
+
+.exp {
+
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 10px;
+
+    position: absolute;
+    width: 173px;
+    height: 44px;
+    left: 690px;
+    top: 1967px;
+
+    /* 009BFF Primary
+
+Primary
+*/
+    background: #009BFF;
+    border-radius: 5px;
+    z-index: 2132;
+    border: 0px solid transparent;
+}
+
+.ex1 {
+    width: 133px;
+    height: 24px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+
+    /* White/900 */
+
+    color: #FFFFFF;
+
+    /* margin-left: 400px; */
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-weight: 900;
+}
+
+.exe {
+    position: absolute;
+    width: 472px;
+    height: 60px;
+    left: 570px;
+    top: 2150px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20;
+
+}
+
+.dave {
+    position: absolute;
+    width: 276px;
+    height: 373px;
+    left: 105px;
+    top: 149rem;
+    z-index: 23232;
+
+    background: url(.jpg), #D9D9D9;
+    border-radius: 12px;
+}
+
+.r9 {
+    position: absolute;
+    width: 276px;
+    height: 373px;
+    left: 445px;
+    top: 149rem;
+    z-index: 23232;
+
+    background: url(.jpg), #D9D9D9;
+    border-radius: 12px;
+}
+
+.r10 {
+    position: absolute;
+    width: 276px;
+    height: 373px;
+    left: 795px;
+    top: 149rem;
+    z-index: 23232;
+
+    background: url(.jpg), #D9D9D9;
+    border-radius: 12px;
+}
+
+.r11 {
+    position: absolute;
+    width: 276px;
+    height: 373px;
+    left: 1150px;
+    top: 149rem;
+    z-index: 23232;
+
+    background: url(.jpg), #D9D9D9;
+    border-radius: 12px;
+}
+
+.dw {
+    /* Dave Wright */
+
+
+    position: absolute;
+    width: 168px;
+    height: 21px;
+    left: 0px;
+    top: 365px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20;
+}
+
+.ceo {
+    position: absolute;
+    width: 139px;
+    height: 18px;
+    left: 0px;
+    top: 439px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    /* 009BFF Primary */
+
+    color: #009BFF;
+}
+
+.link {
+    position: absolute;
+    left: 80%;
+    right: 0%;
+    top: 110.5%;
+    bottom: 0%;
+    z-index: 34323;
+    width: 40px;
+    height: 40px;
+    color: #E5F5FF;
+    border-radius: 5px;
+
+    background: #0A66C2;
+
+}
+
+.dw2 {
+    /* Dave Wright */
+
+
+    position: absolute;
+    width: 168px;
+    height: 21px;
+    left: 0px;
+    top: 365px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20;
+}
+
+.ceo2 {
+    position: absolute;
+    width: 139px;
+    height: 18px;
+    left: 0px;
+    top: 439px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    /* 009BFF Primary */
+
+    color: #009BFF;
+}
+
+.link2 {
+    position: absolute;
+    left: 80%;
+    right: 0%;
+    top: 110.5%;
+    bottom: 0%;
+    z-index: 34323;
+    width: 40px;
+    height: 40px;
+    color: #E5F5FF;
+    border-radius: 5px;
+
+    background: #0A66C2;
+
+}
+
+.dw3 {
+    /* Dave Wright */
+
+
+    position: absolute;
+    width: 168px;
+    height: 21px;
+    left: 0px;
+    top: 365px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20;
+}
+
+.ceo3 {
+    position: absolute;
+    width: 139px;
+    height: 18px;
+    left: 0px;
+    top: 439px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    /* 009BFF Primary */
+
+    color: #009BFF;
+}
+
+.link4 {
+    position: absolute;
+    left: 80%;
+    right: 0%;
+    top: 110.5%;
+    bottom: 0%;
+    z-index: 34323;
+    width: 40px;
+    height: 40px;
+    color: #E5F5FF;
+    border-radius: 5px;
+
+    background: #0A66C2;
+
+}
+
+.dw4 {
+    /* Dave Wright */
+
+
+    position: absolute;
+    width: 168px;
+    height: 21px;
+    left: 0px;
+    top: 365px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20;
+}
+
+.ceo4 {
+    position: absolute;
+    width: 139px;
+    height: 18px;
+    left: 0px;
+    top: 439px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    /* 009BFF Primary */
+
+    color: #009BFF;
+}
+
+.link4 {
+    position: absolute;
+    left: 80%;
+    right: 0%;
+    top: 110.5%;
+    bottom: 0%;
+    z-index: 34323;
+    width: 40px;
+    height: 40px;
+    color: #E5F5FF;
+    border-radius: 5px;
+
+    background: #0A66C2;
+
+}
+
+/* ! career */
+.career {
+    position: absolute;
+    width: 1440px;
+    height: 561px;
+    left: 0px;
+    top: 2903px;
+
+    /* F5F5F5 Gray
+
+Gray
+*/
+    background: #F5F5F5;
+    width: 100%;
+}
+
+.at {
+    position: absolute;
+    width: 404px;
+    height: 60px;
+    left: 570px;
+    top: 10px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20;
+
+}
+
+.bi {
+    position: absolute;
+    width: 276px;
+    height: 180px;
+    left: 123px;
+    top: 203px;
+
+    background: url(.jpg), #D9D9D9;
+    border-radius: 12px;
+}
+
+.data {
+    position: absolute;
+    width: 276px;
+    height: 180px;
+    left: 455px;
+    top: 203px;
+
+    background: url(.jpg), #D9D9D9;
+    border-radius: 12px;
+}
+
+.ana {
+
+    position: absolute;
+    width: 276px;
+    height: 180px;
+    left: 785px;
+    top: 203px;
+
+    background: url(.jpg), #D9D9D9;
+    border-radius: 12px;
+}
+
+.site {
+    position: absolute;
+    width: 276px;
+    height: 180px;
+    left: 1120px;
+    top: 203px;
+
+    background: url(.jpg), #D9D9D9;
+    border-radius: 12px;
+}
+
+.bid {
+    position: absolute;
+    width: 140px;
+    height: 32px;
+    left: 123px;
+    top: 350px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20;
+}
+
+.app {
+    position: absolute;
+    width: 91px;
+    height: 24px;
+    left: 123px;
+    top: 420px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* 009BFF Primary */
+    font-weight: 900;
+    color: #009BFF !important;
+}
+
+.a a {
+    text-decoration: none;
+    color: #009BFF !important;
+
+}
+
+.bid2 {
+    position: absolute;
+    width: 230px;
+    height: 32px;
+    left: 459px;
+    top: 350px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20;
+}
+
+.app2 {
+    position: absolute;
+    width: 91px;
+    height: 24px;
+    left: 459px;
+    top: 420px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* 009BFF Primary */
+
+    color: #009BFF;
+
+
+}
+
+.bid3 {
+    position: absolute;
+    width: 166px;
+    height: 32px;
+    left: 790px;
+    top: 350px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20;
+}
+
+.app3 {
+    position: absolute;
+    width: 91px;
+    height: 24px;
+    left: 790px;
+    top: 420px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* 009BFF Primary */
+
+    color: #009BFF;
+}
+
+.bid4 {
+    position: absolute;
+    width: 256px;
+    height: 32px;
+    left: 1120px;
+    top: 350px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20;
+}
+
+.app4 {
+    position: absolute;
+    width: 91px;
+    height: 24px;
+    left: 1120px;
+    top: 420px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* 009BFF Primary */
+
+    color: #009BFF;
+
+}
+
+.wh {
+    position: absolute;
+    width: 481px;
+    height: 60px;
+    left: 123px;
+    top: 3500px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20;
+}
+
+.obse {
+    position: absolute;
+    width: 577.7px;
+    height: 163px;
+    left: 123px;
+    top: 3622px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    /* or 162% */
+
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    /* 525252 Black Second */
+
+    color: #525252;
+}
+
+.ret8 {
+    position: absolute;
+    width: 582px;
+    height: 378px;
+    left: 835px;
+    top: 3500px;
+
+    background: url(.jpg), #D9D9D9;
+    border-radius: 12px;
+}
+
+.cust {
+    position: absolute;
+    width: 337px;
+    height: 60px;
+    left: 552px;
+    top: 4042px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20
+}
+
+.top {
+    position: absolute;
+    width: 786px;
+    height: 65px;
+    left: 327px;
+    top: 4152px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    /* or 162% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* 525252 Black Second */
+
+    color: #525252;
+
+}
+
+.fee {
+    width: 177.5px;
+    height: 60px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: absolute;
+    top: 4300px;
+    left: 100px;
+}
+
+.gin {
+    position: absolute;
+    width: 106.75px;
+    height: 60px;
+    top: 4300px;
+    left: 310px;
+}
+
+.gl {
+    position: absolute;
+    top: 4315px;
+    left: 450px
+}
+
+.pl {
+    position: absolute;
+    top: 4310px;
+    left: 700px;
+}
+
+.pure {
+    position: absolute;
+    top: 4310px;
+    left: 980px;
+}
+
+.sp {
+    position: absolute;
+    top: 4310px;
+    left: 1230px;
+}
+
+.nl {
+    position: absolute;
+    width: 990px;
+    height: 180px;
+    left: 260px;
+    top: 4420px;
+
+    /* 009BFF Primary
+
+Primary
+*/
+    background: #009BFF;
+    box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    z-index: 9898;
+}
+
+.iw {
+    width: 441px;
+    height: 57px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    /* F5F5F5 Gray */
+
+    color: #F5F5F5;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    position: absolute;
+    left: 30px;
+    top: 80px;
+}
+
+.sub {
+    width: 454.79px;
+    height: 37px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+
+    /* White/900 */
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.em {
+    position: absolute;
+    left: 550px;
+    top: 80px;
+    width: 270px;
+    height: 40px;
+    border: 0px solid transparent;
+    border-radius: 10px;
+}
+
+input {
+    font-weight: bold;
+    text-align: center;
+}
+
+.emi {
+    position: absolute;
+    left: 58%;
+    right: 10%;
+    top: 52%;
+    bottom: 20%;
+
+    background: #A3A3A3;
+}
+
+.snow {
+    position: absolute;
+    left: 85%;
+    top: 43%;
+
+    background: #FBBF24;
+    border-radius: 10px;
+    height: 50px;
+    font-weight: 900;
+    border: 0px solid transparent;
+}
+
+.footer {
+    position: absolute;
+    width: 1440px;
+    height: 720px;
+    left: 0px;
+    top: 4493px;
+
+    /* F5F5F5 Gray
+
+Gray
+*/
+    background: #F5F5F5;
+    width: 100%;
+}
+
+.pat-logo {
+    width: 191px;
+    height: 38px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: absolute;
+    left: 6%;
+    top: 11rem;
+}
+
+.foot-p {
+    width: 378px;
+    height: 96px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    position: absolute;
+    top: 35%;
+    left: 6%;
+}
+
+.icon-2 {
+    position: absolute;
+    left: 6%;
+    top: 55%;
+    padding-right: 5rem;
+    /* padding: 1rem;     */
+    column-gap: 20px;
+    display: flex;
+    /* padding: 5px; */
+    /* padding-left: 5px; */
+    /* margin-left: 5px; */
+}
+
+ul li {
+    /* font-weight: 900; */
+    list-style-type: none;
+}
+
+.go {
+    font-weight: 900;
+    color: grey;
+}
+
+li {
+    font-weight: 600;
+}
+
+.office {
+    position: absolute;
+    left: 30rem;
+    top: 10rem;
+    /* line-height: 10px; */
+    /* display: flex; */
+    line-height: 2rem;
+}
+
+.ql {
+    position: absolute;
+    top: 10rem;
+    line-height: 2rem;
+
+    left: 45rem;
+}
+
+.cu {
+    color: gray;
+    font-weight: 900;
+    position: absolute;
+    top: 10rem;
+    /* line-height: 2rem; */
+
+    left: 65rem;
+
+}
+
+.map {
+    position: absolute;
+    left: 65rem;
+    top: 14rem;
+}
+
+.loc {
+    width: 342px;
+    height: 72px;
+
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+
+    /* 231F20 Secondary */
+
+    color: #231F20;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    position: absolute;
+    left: 67rem;
+    top: 12.5rem;
+
+}
+
+.tel {
+    position: absolute;
+    left: 65rem;
+    top: 20rem;
+}
+.tel-n{
+    /* color: #000000;
+     */
+    color: #231F20;
+
+    font-weight: bolder;
+    position: absolute;
+    left: 67rem;
+    top: 18.9rem;
+}
+.frame{
+    position: absolute;
+    left: 65rem;
+    top: 24rem;
+}
+.info{
+    position: absolute;
+    left: 67rem;
+    top: 23rem;
+    color: #231F20;
+    font-weight: 900;
+
+}
+hr{
+    z-index: 8787;
+    /* /* color: red; */
+    position: absolute;
+    top: 35rem; 
+}
+.copy{
+    position: absolute;
+    top: 40rem; 
+    color: #231F20;
+    font-weight: 900;
+    left: 6%;
+}
+.pri{
+    position: absolute;
+    top: 40rem; 
+    color: #231F20;
+    font-weight: 900;
+    left: 80%;
+}
+.pri p a{
+    text-decoration: none;
+}
+.tc{
+    position: absolute;
+    top: 40rem; 
+    color: #231F20;
+    font-weight: 900;
+    left: 89%;
+}
+.tc p a{
+    text-decoration: none;
+
+}
